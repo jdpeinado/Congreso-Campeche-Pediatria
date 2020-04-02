@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightLogoCampeche">45dp</dimen>
+    <dimen name="heightToolbar">30dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="heightImageViewHome">150dp</dimen>
+
+    <dimen name="sizeTitle">20sp</dimen>
+    <dimen name="marginHomeTitle">10dp</dimen>
+    <dimen name="sizeSubtitle">15sp</dimen>
+    <dimen name="itemScheduleSizeTitle">25sp</dimen>
+    <dimen name="itemScheduleSizeSubtitle">20sp</dimen>
+</resources>

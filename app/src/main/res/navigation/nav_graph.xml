@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navHomeFragment_to_scheduleFragment2"
+            app:destination="@id/navScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navSpeakersFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.SpeakersFragment"
+        android:label="fragment_speakers"
+        tools:layout="@layout/fragment_speakers" >
+        <action
+            android:id="@+id/action_navSpeakersFragment_to_navMapFragment"
+            app:destination="@id/navMapFragment" />
+        <action
+            android:id="@+id/action_navSpeakersFragment_to_speakerDetailDialogFragment"
+            app:destination="@id/speakerDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navMapFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.UbicationFragment"
+        android:label="fragment_ubication"
+        tools:layout="@layout/fragment_ubication" >
+        <action
+            android:id="@+id/action_navMapFragment_to_ubicationDetailDialogFragment"
+            app:destination="@id/ubicationDetailDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/scheduleDetailDialogFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.ScheduleDetailDIalogFragment"
+        android:label="ScheduleDetailDIalogFragment"
+        tools:layout="@layout/fragment_schedule_detail_dialog"/>
+    <dialog
+        android:id="@+id/speakerDetailDialogFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.SpeakerDetailDialogFragment"
+        android:label="SpeakerDetailDialogFragment"
+        tools:layout="@layout/fragment_speaker_detail_dialog"/>
+    <dialog
+        android:id="@+id/ubicationDetailDialogFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.UbicationDetailDialogFragment"
+        android:label="UbicationDetailDialogFragment"
+        tools:layout="@layout/fragment_ubication_detail_dialog"/>
+    <fragment
+        android:id="@+id/navScheduleFragment"
+        android:name="com.campeche.congresopediatria.view.ui.fragment.ScheduleFragment2"
+        android:label="fragment_schedule2"
+        tools:layout="@layout/fragment_schedule2" >
+        <action
+            android:id="@+id/action_scheduleFragment2_to_navSpeakersFragment"
+            app:destination="@id/navSpeakersFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment2_to_scheduleDetailDialogFragment"
+            app:destination="@id/scheduleDetailDialogFragment" />
+    </fragment>
+
+</navigation>
